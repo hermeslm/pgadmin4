@@ -24,4 +24,14 @@ Docker container doc can be accessed from this page (https://hub.docker.com/r/dp
 
 ## Running this container using docker-compose.
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+1. At the top-level directory of this source tree.
+
+### Start pgadmin4 
+./service.sh pgadmin start
+
+### Stop pgadmin4.
+./service.sh pgadmin stop
+
+### Restart pgadmin4.
+./service.sh pgadmin restart
+

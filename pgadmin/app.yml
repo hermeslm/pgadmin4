@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+    pgadmin:
+        container_name: pgadmin4
+        image: onedsol/pgadmin4
+        environment:
+            - PGADMIN_DEFAULT_EMAIL=user@domain.com
+            - PGADMIN_DEFAULT_PASSWORD=SuperSecret
+#            - PGADMIN_ENABLE_TLS=True
+            - PGADMIN_SERVER_NAME=pgadmin.domain.com
+        volumes:
+            - data:/var/lib/pgadmin
+        ports:
+            - 80:80
+        restart: always
+volumes:
+    data:
+

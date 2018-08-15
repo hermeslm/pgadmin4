@@ -142,4 +142,6 @@ Desktop.ini
 # Ignore upload files
 #######################
 **/password.txt
+**/build-image.sh
 **/upload.sh
+
